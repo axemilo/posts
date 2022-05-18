@@ -3,3 +3,8 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.post__item {
+  border: 1px solid #000;
+  padding: 15px;
+}
