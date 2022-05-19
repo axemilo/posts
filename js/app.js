@@ -19,7 +19,7 @@ const renderItems = (post) => {
     />
     <p class="post__profile-title fs-5 fw-semibold">
       ${post[i].user.name}
-      <span class="d-block fw-normal">@${post[i].user.username}</span>
+      <span class="d-block fw-normal text-lowercase">@${post[i].user.username}</span>
     </p>
   </div>
   <div class="post__item-main">
@@ -47,7 +47,7 @@ const renderItems = (post) => {
       collapseDiv.appendChild(collapseEl)
       elItem.appendChild(collapseDiv)
       collapseEl.innerHTML = `<div class="d-flex align-items-center mb-2">
-      <img class="rounded-circle d-inline-block" src="https://picsum.photos/202/${j + i + 300}" width="50" height="50"/>
+      <img class="rounded-circle d-inline-block" src="https://picsum.photos/202/${j + i + 300}" width="40" height="40"/>
       <p class="mx-3 fw-semibold text-lowercase ">${post[i].comments[j].email}</p>
       </div>
       <div class="">
